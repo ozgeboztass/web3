@@ -10,7 +10,7 @@ export default function Home() {
     <section className="text-gray-400 bg-gray-900 body-font">
       <Header />
       <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-        <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 md:mb-0 mb-10">
+        <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 md:mb-0 mb-10 border-[0.5px]    border-blue-400">
           <img
             className="object-cover object-center rounded"
             alt="hero"
@@ -18,7 +18,7 @@ export default function Home() {
           />
         </div>
         <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-          <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
+          <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium bg-gradient-to-r from-blue-600 via-purple-500 to-indigo-400 inline-block text-transparent bg-clip-text">
             Empowering the Digital Frontier
           </h1>
           <p className="mb-8 leading-relaxed">
@@ -41,44 +41,44 @@ export default function Home() {
               <div className="md:p-2 p-1 w-1/2">
                 <img
                   alt="gallery"
-                  className="w-full object-cover h-full object-center block"
+                  className="w-full object-cover h-full object-center block border-[0.5px]    border-blue-400"
                   src="./img/d1.png"
                 />
               </div>
               <div className="md:p-2 p-1 w-1/2">
                 <img
                   alt="gallery"
-                  className="w-full object-cover h-full object-center block"
+                  className="w-full object-cover h-full object-center block border-[0.5px]    border-blue-400"
                   src="./img/d4.png"
                 />
               </div>
-              <div className="md:p-2 p-1 w-full">
+              <div className="md:p-2 p-1 w-full ">
                 <img
                   alt="gallery"
-                  className="w-full h-full object-cover object-center block"
+                  className="w-full h-full object-cover object-center block border-[0.5px]    border-blue-400"
                   src="./img/d3.png"
                 />
               </div>
             </div>
-            <div className="flex flex-wrap w-1/2">
+            <div className="flex flex-wrap w-1/2 ">
               <div className="md:p-2 p-1 w-full">
                 <img
                   alt="gallery"
-                  className="w-full h-full object-cover object-center block"
+                  className="w-full h-full object-cover object-center block border-[0.5px]    border-blue-400"
                   src="./img/d2.png"
                 />
               </div>
-              <div className="md:p-2 p-1 w-1/2">
+              <div className="md:p-2 p-1 w-1/2 ">
                 <img
                   alt="gallery"
-                  className="w-full object-cover h-full object-center block"
+                  className="w-full object-cover h-full object-center block border-[0.5px]    border-blue-400"
                   src="./img/d5.png"
                 />
               </div>
               <div className="md:p-2 p-1 w-1/2">
                 <img
                   alt="gallery"
-                  className="w-full object-cover h-full object-center block"
+                  className="w-full object-cover h-full object-center block border-[0.5px]    border-blue-400"
                   src="./img/d6.png"
                 />
               </div>
@@ -112,7 +112,7 @@ export default function Home() {
                   type="text"
                   id="name"
                   name="name"
-                  className="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-purple-500 focus:bg-gray-900 focus:ring-2 focus:ring-purple-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                  className="w-full bg-gray-800 bg-opacity-40 rounded border border-blue-400 focus:border-purple-500 focus:bg-gray-900 focus:ring-2 focus:ring-purple-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                 />
               </div>
             </div>
@@ -128,7 +128,7 @@ export default function Home() {
                   type="email"
                   id="email"
                   name="email"
-                  className="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-purple-500 focus:bg-gray-900 focus:ring-2 focus:ring-purple-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                  className="w-full bg-gray-800 bg-opacity-40 rounded border border-blue-400 focus:border-purple-500 focus:bg-gray-900 focus:ring-2 focus:ring-purple-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                 />
               </div>
             </div>
@@ -143,13 +143,13 @@ export default function Home() {
                 <textarea
                   id="message"
                   name="message"
-                  className="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-purple-500 focus:bg-gray-900 focus:ring-2 focus:ring-purple-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                  className="w-full bg-gray-800 bg-opacity-40 rounded border border-blue-400 focus:border-purple-500 focus:bg-gray-900 focus:ring-2 focus:ring-purple-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
                   defaultValue={""}
                 />
               </div>
             </div>
             <div className="p-2 w-full">
-              <button className="flex mx-auto text-white bg-purple-500 border-0 py-2 px-8 focus:outline-none hover:bg-purple-600 rounded text-lg">
+              <button className="flex mx-auto text-white bg-gradient-to-t to-purple-400 from-blue-400 border-0 py-2 px-8 focus:outline-none hover:bg-purple-600 rounded text-lg">
                 Button
               </button>
             </div>

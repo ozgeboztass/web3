@@ -11,7 +11,7 @@ const coin = () => {
           <div className="lg:w-4/5 mx-auto flex flex-wrap">
             <img
               alt="ecommerce"
-              className="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded"
+              className="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded border-[0.5px]    border-blue-400"
               src="./img/nftt.png"
             />
             <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
@@ -95,7 +95,7 @@ const coin = () => {
                 <span className="title-font font-medium text-2xl text-white">
                   $58.00
                 </span>
-                <button className="flex ml-auto text-white bg-purple-500 border-0 py-2 px-6 focus:outline-none hover:bg-purple-600 rounded">
+                <button className="flex ml-auto text-white bg-gradient-to-t to-purple-400 from-blue-400 border-0 py-2 px-6 focus:outline-none hover:bg-purple-600 rounded">
                   Button
                 </button>
                 <button className="rounded-full w-10 h-10 bg-gray-800 p-0 border-0 inline-flex items-center justify-center text-gray-500 ml-4">
@@ -118,7 +118,10 @@ const coin = () => {
 
       <div className="container px-5 py-24 mx-auto">
         <div className="flex flex-col text-center w-full mb-20">
-          <h1 className="sm:text-4xl text-3xl font-medium title-font mb-2 text-white">
+          <h1
+            className="sm:text-4xl text-3xl font-medium title-font mb-2 bg-gradient-to-r from-blue-600 via-purple-500
+           inline-block text-transparent bg-clip-text"
+          >
             Collection
           </h1>
           <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
@@ -196,7 +199,7 @@ const coin = () => {
         </div>
 
         <div className="flex pl-4 mt-4 lg:w-2/3 w-full mx-auto">
-          <a className="text-purple-400 inline-flex items-center md:mb-2 lg:mb-0">
+          <a className="bg-gradient-to-r from-blue-600 via-purple-500 to-indigo-400  text-transparent bg-clip-text inline-flex items-center md:mb-2 lg:mb-0">
             Learn More
             <svg
               fill="none"
@@ -210,7 +213,7 @@ const coin = () => {
               <path d="M5 12h14M12 5l7 7-7 7" />
             </svg>
           </a>
-          <button className="flex ml-auto text-white bg-purple-500 border-0 py-2 px-6 focus:outline-none hover:bg-purple-600 rounded">
+          <button className="flex ml-auto text-white bg-gradient-to-t to-purple-400 from-blue-400 border-0 py-2 px-6 focus:outline-none hover:bg-purple-600 rounded">
             Button
           </button>
         </div>
