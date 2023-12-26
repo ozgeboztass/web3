@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 function header() {
@@ -8,24 +9,24 @@ function header() {
           <img src="./img/nftlogo.png" className="h-20" />
         </a>
         <nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-700	flex flex-wrap items-center text-base justify-center">
-          <a
+          <Link
             className="mr-5 hover:text-white font-bold text-purple-500"
-            href=""
+            href="/"
           >
             Home
-          </a>
-          <a
+          </Link>
+          <Link
             className="mr-5 hover:text-white active:text-purple-400"
             href="coin"
           >
             Nft
-          </a>
-          <a className="mr-5 hover:text-white" href="blockchain">
+          </Link>
+          <Link className="mr-5 hover:text-white" href="blockchain">
             BlockChain
-          </a>
-          <a className="mr-5 hover:text-white" href="web3">
+          </Link>
+          <Link className="mr-5 hover:text-white" href="web3">
             Web3
-          </a>
+          </Link>
         </nav>
         <button className="inline-flex items-center border-[0.5px] bg-gradient-to-t to-purple-400 from-blue-400 border-slate-200 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0 text-slate-600">
           Sing In

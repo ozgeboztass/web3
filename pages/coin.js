@@ -1,8 +1,22 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Footer from "./components/footer";
 import Header from "./components/header";
 
 const coin = () => {
+  const [apiData, setApiData] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const response = await fetch(
+        "https://api7.pyramid.market/api/collection/intro"
+      );
+      const res = await response.json();
+      setApiData(res.data);
+    };
+
+    fetchData();
+  }, []);
+
   return (
     <section className="text-gray-400 bg-gray-900 body-font">
       <Header />
@@ -153,47 +167,21 @@ const coin = () => {
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td className="px-4 py-3">Cosmic Dream #1</td>
-                <td className="px-4 py-3">1.2 ETH</td>
-                <td className="px-4 py-3">50 ETH</td>
-                <td className="px-4 py-3 text-lg text-white">101</td>
-                <td className="w-10 text-center">
-                  <input name="plan" type="radio" />
-                </td>
-              </tr>
-
-              <tr>
-                <td className="border-t-2 border-gray-800 px-4 py-3">
-                  Digital Nexus
-                </td>
-                <td className="border-t-2 border-gray-800 px-4 py-3">
-                  0.8 ETH
-                </td>
-                <td className="border-t-2 border-gray-800 px-4 py-3">30 ETH</td>
-                <td className="border-t-2 border-gray-800 px-4 py-3 text-lg text-white">
-                  102
-                </td>
-                <td className="border-t-2 border-gray-800 w-10 text-center">
-                  <input name="plan" type="radio" />
-                </td>
-              </tr>
-
-              <tr>
-                <td className="border-t-2 border-gray-800 px-4 py-3">
-                  Legendary Digital Landscape
-                </td>
-                <td className="border-t-2 border-gray-800 px-4 py-3">
-                  1.5 ETH
-                </td>
-                <td className="border-t-2 border-gray-800 px-4 py-3">70 ETH</td>
-                <td className="border-t-2 border-gray-800 px-4 py-3 text-lg text-white">
-                  103
-                </td>
-                <td className="border-t-2 border-gray-800 w-10 text-center">
-                  <input name="plan" type="radio" />
-                </td>
-              </tr>
+              {apiData.map((item, i) => {
+                return (
+                  // Her öğe için bir satır oluştur
+                  <tr key={i}>
+                    {/* Veri içindeki özellikleri kullanabilirsiniz */}
+                    <td className="px-4 py-3">{item.name}</td>
+                    <td className="px-4 py-3">{item.featuredRank}</td>
+                    <td className="px-4 py-3">{item.floorPrice}</td>
+                    <td className="px-4 py-3">{item.totalSupply}</td>
+                    <td className="px-4 py-3 text-lg text-white">
+                      {item.rank}
+                    </td>
+                  </tr>
+                );
+              })}
             </tbody>
           </table>
         </div>
