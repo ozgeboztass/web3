@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import Component from "./login-btn";
 
 function header() {
   return (
@@ -28,9 +29,7 @@ function header() {
             Web3
           </Link>
         </nav>
-        <button className="inline-flex items-center border-[0.5px] bg-gradient-to-t to-purple-400 from-blue-400 border-slate-200 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0 text-slate-600">
-          Sing In
-        </button>
+        <Component />
       </div>
     </header>
   );
