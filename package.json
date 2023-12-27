@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@types/next-auth": "^3.15.0",
     "formik": "^2.4.5",
     "framer-motion": "^10.16.16",
     "next": "14.0.4",
