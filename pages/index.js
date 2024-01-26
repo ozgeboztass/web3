@@ -93,7 +93,6 @@ export default function Home() {
           name: "",
           email: "",
           message: "",
-          selectedOption: "",
         }}
         onSubmit={(values, { resetForm }) => {
           console.log(values);
@@ -148,29 +147,7 @@ export default function Home() {
                       />
                     </div>
                   </div>
-                  <div className="p-2 w-full">
-                    <div className="relative">
-                      <label
-                        htmlFor="selectedOption"
-                        className="leading-7 text-sm text-gray-400"
-                      >
-                        Select an option:
-                      </label>
-                      <Field
-                        as="select"
-                        id="selectedOption"
-                        name="selectedOption"
-                        className="w-full bg-gray-800 bg-opacity-40 rounded border border-blue-400 focus:border-purple-500 focus:bg-gray-900 focus:ring-2 focus:ring-purple-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-                      >
-                        <option value="" label="Select an option" />
-                        {options.map((option) => (
-                          <option key={option.value} value={option.value}>
-                            {option.label}
-                          </option>
-                        ))}
-                      </Field>
-                    </div>
-                  </div>
+
                   <div className="p-2 w-full">
                     <div className="relative">
                       <label

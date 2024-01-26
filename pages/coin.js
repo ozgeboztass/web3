@@ -3,20 +3,6 @@ import Footer from "./components/footer";
 import Header from "./components/header";
 
 const coin = () => {
-  const [apiData, setApiData] = useState([]);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      const response = await fetch(
-        "https://api7.pyramid.market/api/collection/intro"
-      );
-      const res = await response.json();
-      setApiData(res.data);
-    };
-
-    fetchData();
-  }, []);
-
   return (
     <section className="text-gray-400 bg-gray-900 body-font">
       <Header />
@@ -166,23 +152,7 @@ const coin = () => {
                 <th className="w-10 title-font tracking-wider font-medium text-white text-sm bg-gray-800 rounded-tr rounded-br" />
               </tr>
             </thead>
-            <tbody>
-              {apiData.map((item, i) => {
-                return (
-                  // Her öğe için bir satır oluştur
-                  <tr key={i}>
-                    {/* Veri içindeki özellikleri kullanabilirsiniz */}
-                    <td className="px-4 py-3">{item.name}</td>
-                    <td className="px-4 py-3">{item.featuredRank}</td>
-                    <td className="px-4 py-3">{item.floorPrice}</td>
-                    <td className="px-4 py-3">{item.totalSupply}</td>
-                    <td className="px-4 py-3 text-lg text-white">
-                      {item.rank}
-                    </td>
-                  </tr>
-                );
-              })}
-            </tbody>
+            <tbody></tbody>
           </table>
         </div>
 
